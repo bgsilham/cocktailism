@@ -1,25 +1,35 @@
 import React, {Component} from 'react';
-import {View, Text, StyleSheet, TouchableOpacity, Image} from 'react-native';
+import {
+  View,
+  Text,
+  StyleSheet,
+  TouchableOpacity,
+  Image,
+  StatusBar,
+} from 'react-native';
 
 import bartender from '../../assets/img/bartender.png';
 
 export default class Welcome extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <View style={styles.header}>
-          <Image source={bartender} style={styles.image} />
-        </View>
-        <View style={styles.footer}>
-          <View style={styles.footerTitleWrapper}>
-            <Text style={styles.title}>An Easy Way to Learning</Text>
-            <Text style={styles.title}>All About Cocktail</Text>
+      <>
+        <StatusBar backgroundColor="#212121" />
+        <View style={styles.container}>
+          <View style={styles.header}>
+            <Image source={bartender} style={styles.image} />
           </View>
-          <TouchableOpacity style={styles.btnStart}>
-            <Text style={styles.btnStartText}>Get Started</Text>
-          </TouchableOpacity>
+          <View style={styles.footer}>
+            <View style={styles.footerTitleWrapper}>
+              <Text style={styles.title}>An Easy Way to Learning</Text>
+              <Text style={styles.title}>All About Cocktail</Text>
+            </View>
+            <TouchableOpacity style={styles.btnStart}>
+              <Text style={styles.btnStartText}>Get Started</Text>
+            </TouchableOpacity>
+          </View>
         </View>
-      </View>
+      </>
     );
   }
 }
@@ -31,7 +41,7 @@ const styles = StyleSheet.create({
   },
   header: {
     flex: 4,
-    backgroundColor: 'pink',
+    backgroundColor: '#212121',
   },
   footer: {
     flex: 2,

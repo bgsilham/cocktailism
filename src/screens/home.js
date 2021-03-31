@@ -65,6 +65,23 @@ export default class Home extends Component {
                 </View>
               </View>
             </View>
+            <View style={styles.popular}>
+              <Text style={styles.contentTitle}>Popular for you</Text>
+              <View style={styles.popularWrapper}>
+                <View style={styles.popularCardMain}>
+                  <Text style={styles.txtPopular}>Mojito</Text>
+                  <View style={styles.imgPopular} />
+                </View>
+                <View style={styles.popularCardSecondaryWrapper}>
+                  <View style={styles.popularCardSecondary}>
+                    <Text style={styles.txtPopular}>Martini</Text>
+                  </View>
+                  <View style={styles.popularCardSecondary}>
+                    <Text style={styles.txtPopular}>Cosmopolitan</Text>
+                  </View>
+                </View>
+              </View>
+            </View>
           </View>
         </KeyboardAvoidingView>
       </>
@@ -145,5 +162,42 @@ const styles = StyleSheet.create({
   },
   cardTitle: {
     color: '#fff',
+  },
+  popular: {
+    marginTop: 20,
+  },
+  popularWrapper: {
+    marginTop: 10,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  popularCardMain: {
+    width: 170,
+    height: 250,
+    backgroundColor: '#171717',
+    borderRadius: 20,
+    justifyContent: 'space-between',
+  },
+  popularCardSecondaryWrapper: {
+    justifyContent: 'space-between',
+  },
+  popularCardSecondary: {
+    width: 170,
+    height: 120,
+    backgroundColor: '#212121',
+    borderRadius: 20,
+  },
+  txtPopular: {
+    color: '#FFF',
+    fontWeight: 'bold',
+    fontSize: 17,
+    marginTop: 10,
+    marginLeft: 10,
+  },
+  imgPopular: {
+    width: 100,
+    height: 100,
+    backgroundColor: 'pink',
+    alignSelf: 'flex-end',
   },
 });

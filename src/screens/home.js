@@ -75,9 +75,11 @@ export default class Home extends Component {
                 <View style={styles.popularCardSecondaryWrapper}>
                   <View style={styles.popularCardSecondary}>
                     <Text style={styles.txtPopular}>Martini</Text>
+                    <View style={styles.imgPopularSecondary} />
                   </View>
                   <View style={styles.popularCardSecondary}>
                     <Text style={styles.txtPopular}>Cosmopolitan</Text>
+                    <View style={styles.imgPopularSecondary} />
                   </View>
                 </View>
               </View>
@@ -186,6 +188,7 @@ const styles = StyleSheet.create({
     height: 120,
     backgroundColor: '#212121',
     borderRadius: 20,
+    justifyContent: 'space-between',
   },
   txtPopular: {
     color: '#FFF',
@@ -195,9 +198,17 @@ const styles = StyleSheet.create({
     marginLeft: 10,
   },
   imgPopular: {
-    width: 100,
-    height: 100,
+    width: 120,
+    height: 180,
     backgroundColor: 'pink',
     alignSelf: 'flex-end',
+    borderBottomRightRadius: 20,
   },
+  imgPopularSecondary: {
+    width: 100,
+    height: 70,
+    backgroundColor: 'pink',
+    alignSelf: 'flex-end',
+    borderBottomRightRadius: 20,
+  }
 });

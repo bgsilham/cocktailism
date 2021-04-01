@@ -210,5 +210,5 @@ const styles = StyleSheet.create({
     backgroundColor: 'pink',
     alignSelf: 'flex-end',
     borderBottomRightRadius: 20,
-  }
+  },
 });
